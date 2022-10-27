@@ -25,7 +25,7 @@ class TestableClassTest {
     //Arrange
     TestableClass testableClass = new TestableClass();
 
-    //Act
+    //Act & Assert
     Assertions.assertThrows(IllegalArgumentException.class, () -> testableClass.getValue(Integer.MAX_VALUE));
   }
 
