@@ -2,6 +2,9 @@ package org.example;
 
 public class TestableClass {
   public int getValue(int i) {
-    return i + 1;
+    if (i == Integer.MAX_VALUE)
+      throw new IllegalArgumentException("int too big");
+    else
+      return i + 1;
   }
 }
